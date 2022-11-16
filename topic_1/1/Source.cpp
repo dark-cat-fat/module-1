@@ -1,12 +1,29 @@
 #include <iostream>
 #include <fstream>
 
-void write(int* arr, std::ofstream& output, int size)
+void left(int* arr, std::ofstream& output, int size)
+{
+	int last_first = 0;
+
+	output << size << '\n';
+	
+
+	for (int i = 1; i < size; i++)
+	{
+		output << arr[i] << ' ';
+	}
+
+	output << arr[last_first];
+
+	output << '\n';
+}
+
+void right(int* arr, std::ofstream& output, int size)
 {
 	int first_last = size - 1;
 
 	output << size << '\n';
-	
+
 	output << arr[first_last] << ' ';
 
 	for (int i = 0; i < first_last; i++)
@@ -22,8 +39,6 @@ void write(int* arr, std::ofstream& output, int size)
 
 void add_arr(int* arr, std::ifstream& input, int size)
 {
-	int a;
-
 	for (int i = 0; i < size; i++)
 	{
 		input >> arr[i];
@@ -33,13 +48,6 @@ void add_arr(int* arr, std::ifstream& input, int size)
 void del_arr(int* arr)
 {
 	delete[] arr;
-}
-
-void print_arr(int* arr, int size)
-{
-	for (int i = 0; i < size; i++)
-		std::cout << arr[i] << ' ';
-	std::cout << '\n';
 }
 
 
@@ -74,8 +82,8 @@ int main()
 
 	input.close();
 
-	write(arr_2, output, size_2);
-	write(arr_1, output, size_1);
+	right(arr_2, output, size_2);
+	left(arr_1, output, size_1);
 
 	output.close();
 
