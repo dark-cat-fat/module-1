@@ -1,8 +1,0 @@
-﻿  Source.cpp
-D:\Microsoft Visual Studio\Project\module_01\topic_2\3\Source.cpp(29,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  Создание кода
-  2 of 95 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Создание кода завершено
-  3.vcxproj -> D:\Microsoft Visual Studio\Project\module_01\topic_2\3\x64\Release\3.exe
