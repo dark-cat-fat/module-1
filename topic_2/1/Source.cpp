@@ -2,92 +2,100 @@
 
 enum class mouths
 {
-	exit_prog,
-	january,
-	february,
-	march,
-	april,
-	may,
-	june,
-	jule,
-	august,
-	september,
-	ocotber,
-	november,
-	december
+	Выход,
+	Январь,
+	Февраль,
+	Март,
+	Апрель,
+	Май,
+	Июнь,
+	Июль,
+	Август,
+	Сентябрь,
+	Октябрь,
+	Ноябрь,
+	Декабрь
 };
 
 
 mouths input_num()
 {
-	int input;
-
+	int mouth;
 	while(true)
 	{
 		std::cout << "Введите номер месяца: ";
-		std::cin >> input;
+		std::cin >> mouth;
 
-		if (input > 12 || input < 0)
-			std::cout << "Неправильный номер!" << std::endl;
+		if (mouth < 13 && mouth > -1)
+			return static_cast<mouths>(mouth);
 
 		else
-			break;
+			std::cout << "Неправильный номер!" << std::endl;
 	} 
-
-	return static_cast<mouths>(input);
 }
 
-void main()
+int main()
 {
 	setlocale(LC_ALL, "Russian");
 
 	mouths mouth;
 
-	while (true)
-	{
+	while (true) {
 		mouth = input_num();
 
-		if (mouth == mouths::exit_prog)
+		switch (static_cast<int>(mouth))
 		{
+		case 0:
 			std::cout << "До свидания";
+			return 0;
+
+		case 1:
+			std::cout << "Январь" << std::endl;
+			break;
+
+		case 2:
+			std::cout << "Февраль" << std::endl;
+			break;
+
+		case 3:
+			std::cout << "Март" << std::endl;
+			break;
+
+		case 4:
+			std::cout << "Апрель" << std::endl;
+			break;
+
+		case 5:
+			std::cout << "Май" << std::endl;
+			break;
+
+		case 6:
+			std::cout << "Июнь" << std::endl;
+			break;
+
+		case 7:
+			std::cout << "Июль" << std::endl;
+			break;
+
+		case 8:
+			std::cout << "Август" << std::endl;
+			break;
+
+		case 9:
+			std::cout << "Сентябрь" << std::endl;
+			break;
+
+		case 10:
+			std::cout << "Октябрь" << std::endl;
+			break;
+
+		case 11:
+			std::cout << "Ноябрь" << std::endl;
+			break;
+
+		case 12:
+			std::cout << "Декабрь" << std::endl;
 			break;
 		}
-
-		else if (mouth == mouths::january)
-			std::cout << "Январь" << std::endl;
-
-		else if (mouth == mouths::february)
-			std::cout << "Февраль" << std::endl;
-
-		else if (mouth == mouths::march)
-			std::cout << "Март" << std::endl;
-
-		else if (mouth == mouths::april)
-			std::cout << "Апрель" << std::endl;
-
-		else if (mouth == mouths::may)
-			std::cout << "Май" << std::endl;
-
-		else if (mouth == mouths::june)
-			std::cout << "Июнь" << std::endl;
-
-		else if (mouth == mouths::jule)
-			std::cout << "Июль" << std::endl;
-
-		else if (mouth == mouths::august)
-			std::cout << "Август" << std::endl;
-
-		else if (mouth == mouths::september)
-			std::cout << "Сентябрь" << std::endl;
-
-		else if (mouth == mouths::ocotber)
-			std::cout << "Октябрь" << std::endl;
-
-		else if (mouth == mouths::november)
-			std::cout << "Ноябрь" << std::endl;
-
-		else if (mouth == mouths::december)
-			std::cout << "Декабрь" << std::endl;
-
 	}
 }
