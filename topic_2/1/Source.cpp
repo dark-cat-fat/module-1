@@ -2,19 +2,18 @@
 
 enum class mouths
 {
-	Выход,
-	Январь,
-	Февраль,
-	Март,
-	Апрель,
-	Май,
-	Июнь,
-	Июль,
-	Август,
-	Сентябрь,
-	Октябрь,
-	Ноябрь,
-	Декабрь
+	January = 1,
+	February,
+	March,
+	April,
+	May,
+	June,
+	July,
+	August,
+	September,
+	October,
+	November,
+	December
 };
 
 
@@ -43,59 +42,61 @@ int main()
 	while (true) {
 		mouth = input_num();
 
-		switch (static_cast<int>(mouth))
+		switch (mouth)
 		{
-		case 0:
-			std::cout << "До свидания";
-			return 0;
 
-		case 1:
+		case mouths::January:
 			std::cout << "Январь" << std::endl;
 			break;
 
-		case 2:
+		case mouths::February:
 			std::cout << "Февраль" << std::endl;
 			break;
 
-		case 3:
+		case mouths::March:
 			std::cout << "Март" << std::endl;
 			break;
 
-		case 4:
+		case mouths::April:
 			std::cout << "Апрель" << std::endl;
 			break;
 
-		case 5:
+		case mouths::May:
 			std::cout << "Май" << std::endl;
 			break;
 
-		case 6:
+		case mouths::June:
 			std::cout << "Июнь" << std::endl;
 			break;
 
-		case 7:
+		case mouths::July:
 			std::cout << "Июль" << std::endl;
 			break;
 
-		case 8:
+		case mouths::August:
 			std::cout << "Август" << std::endl;
 			break;
 
-		case 9:
+		case mouths::September:
 			std::cout << "Сентябрь" << std::endl;
 			break;
 
-		case 10:
+		case mouths::October:
 			std::cout << "Октябрь" << std::endl;
 			break;
 
-		case 11:
+		case mouths::November:
 			std::cout << "Ноябрь" << std::endl;
 			break;
 
-		case 12:
+		case mouths::December:
 			std::cout << "Декабрь" << std::endl;
 			break;
+
+		default:
+			std::cout << "До свидания";
+			return 0;
+
 		}
 	}
 }
