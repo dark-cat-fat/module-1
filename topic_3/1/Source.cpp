@@ -2,9 +2,11 @@
 
 class Calculator
 {
-public:
+private:
 	float num_1;
 	float num_2;
+
+public:
 
 	double add() {return num_1 + num_2;}
 	double subtract_1_2() {return num_1 - num_2;}
