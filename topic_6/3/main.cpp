@@ -1,5 +1,6 @@
 #include <iostream>
-#include "Figure.h"
+#include "Triangle.h"
+#include "Quadrilateral.h"
 
 void main()
 {
