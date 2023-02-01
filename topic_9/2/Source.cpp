@@ -17,62 +17,80 @@ public:
 
 	void fShrink(int &numerator, int &denominator)
 	{
-		int shrink = 1;
-
-		for (int i = 2; i <= denominator; i++)
+		int shrink = 1, max_num, min_num, tmp;
+		
+		if (numerator > denominator)
 		{
-			if (denominator % i == 0 && numerator % i == 0)
-				shrink = i;
+			 max_num = numerator;
+			 min_num = denominator;
 		}
+
+		else
+		{
+			 max_num = denominator;
+			 min_num = numerator;
+		}
+
+		while (max_num % min_num != 0)
+		{
+			tmp = max_num;
+			max_num = min_num;
+			min_num = tmp % min_num;
+		}
+
+		shrink = min_num;
 
 		numerator = numerator / shrink;
 		denominator = denominator / shrink;
 
 	}
 
-	std::string operator+(Fraction other) 
+	Fraction operator+(Fraction other)
 	{ 
-		int new_num = numerator_ * other.denominator_ + other.numerator_ * denominator_;
-		int new_den = other.denominator_ * denominator_;
+		Fraction tmp(numerator_, denominator_);
+		tmp.numerator_= numerator_ * other.denominator_ + other.numerator_ * denominator_;
+		tmp.denominator_= other.denominator_ * denominator_;
 
-		fShrink(new_num, new_den);
+		fShrink(tmp.numerator_, tmp.denominator_);
 
-		return  std::to_string(new_num) + '/' + std::to_string(new_den);
+		return tmp;
 	}
 
-	std::string operator-(Fraction other)
+	Fraction operator-(Fraction other)
 	{
-		int new_num = numerator_ * other.denominator_ - other.numerator_ * denominator_;
-		int new_den = other.denominator_ * denominator_;
+		Fraction tmp(numerator_, denominator_);
+		tmp.numerator_ = numerator_ * other.denominator_ - other.numerator_ * denominator_;
+		tmp.denominator_ = other.denominator_ * denominator_;
 
-		fShrink(new_num, new_den);
+		fShrink(tmp.numerator_, tmp.denominator_);
 
-		return  std::to_string(new_num) + '/' + std::to_string(new_den);
+		return  tmp;
 	}
 
-	std::string operator*(Fraction other)
+	Fraction operator*(Fraction other)
 	{
-		int new_num = numerator_ * other.numerator_;
-		int new_den = other.denominator_ * denominator_;
+		Fraction tmp(numerator_, denominator_);
+		tmp.numerator_ = numerator_ * other.numerator_;
+		tmp.denominator_ = other.denominator_ * denominator_;
 
-		fShrink(new_num, new_den);
+		fShrink(tmp.numerator_, tmp.denominator_);
 
-		return  std::to_string(new_num) + '/' + std::to_string(new_den);
+		return  tmp;
 	}
 
-	std::string operator/(Fraction other)
+	Fraction operator/(Fraction other)
 	{
-		int new_num = numerator_ * other.denominator_;
-		int new_den = other.numerator_ * denominator_;
+		Fraction tmp(numerator_, denominator_);
+		tmp.numerator_ = numerator_ * other.denominator_;
+		tmp.denominator_ = other.numerator_ * denominator_;
 
-		fShrink(new_num, new_den);
+		fShrink(tmp.numerator_, tmp.denominator_);
 
-		return  std::to_string(new_num) + '/' + std::to_string(new_den);
+		return  tmp;
 	}
 
 	Fraction operator++()
 	{
-
 		numerator_ = numerator_ + denominator_;
 		fShrink(numerator_, denominator_);
 
@@ -81,13 +99,13 @@ public:
 
 	Fraction operator--(int)
 	{
-		Fraction tmp = *this;
-
 		numerator_ = numerator_ - denominator_;
 
-		return tmp;
+		return *this;
 	}
 	
+	friend std::ostream& operator<<(std::ostream& out, const Fraction& output);
+
 	int getNumerator()
 	{
 		return numerator_;
@@ -98,6 +116,11 @@ public:
 		return denominator_;
 	}
 };
+
+std::ostream& operator<<(std::ostream& out, const Fraction& output)
+{
+	return out << output.numerator_ << '/' << output.denominator_;
+}
 
 void main()
 {

@@ -5,21 +5,24 @@ class Fraction
 private:
 	int numerator_;
 	int denominator_;
-	double number;
+
+	int number(Fraction tmp)
+	{
+		return numerator_ * tmp.denominator_;
+	}
 
 public:
 	Fraction(int numerator, int denominator)
 	{
 		numerator_ = numerator;
 		denominator_ = denominator;
-		number = numerator_ / denominator_;
 	}
-	bool operator==(Fraction other) { return this->number == other.number; }
-	bool operator!=(Fraction other) { return this->number != other.number; }
-	bool operator>(Fraction other) { return this->number > other.number; }
-	bool operator<(Fraction other) { return this->number < other.number; }
-	bool operator>=(Fraction other) { return this->number >= other.number; }
-	bool operator<=(Fraction other) { return this->number <= other.number; }
+	bool operator==(Fraction other) { return number(other) == other.number(*this); }
+	bool operator!=(Fraction other) { return !(number(other) == other.number(*this)); }
+	bool operator>(Fraction other) { return number(other) > other.number(*this); }
+	bool operator<(Fraction other) { return other.number(*this) > number(other); }
+	bool operator>=(Fraction other) { return !(number(other) < other.number(*this)); }
+	bool operator<=(Fraction other) { return !(number(other) > other.number(*this)); }
 };
 
 int main()
