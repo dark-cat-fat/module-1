@@ -17,6 +17,7 @@ public:
 		numerator_ = numerator;
 		denominator_ = denominator;
 	}
+
 	bool operator==(Fraction other) { return number(other) == other.number(*this); }
 	bool operator!=(Fraction other) { return !(number(other) == other.number(*this)); }
 	bool operator>(Fraction other) { return number(other) > other.number(*this); }

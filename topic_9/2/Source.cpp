@@ -39,7 +39,7 @@ public:
 		}
 
 		shrink = min_num;
-
+		  
 		numerator = numerator / shrink;
 		denominator = denominator / shrink;
 
@@ -100,7 +100,6 @@ public:
 	Fraction operator--(int)
 	{
 		numerator_ = numerator_ - denominator_;
-
 		return *this;
 	}
 	
