@@ -1,0 +1,5 @@
+# ninja log v5
+2	772	6970290241818676	CMakeFiles/CMake_program_2.dir/main.cpp.obj	79bbf953d9864e09
+8	789	6970290241999611	CMakeFiles/CMake_program_2.dir/Triangle.cpp.obj	e782abdf9a422480
+5	810	6970290242213630	CMakeFiles/CMake_program_2.dir/Quadrilateral.cpp.obj	201a8a9b9d5bdcad
+810	1521	6970290249101732	CMake_program_2.exe	3fc602f4cf71049e

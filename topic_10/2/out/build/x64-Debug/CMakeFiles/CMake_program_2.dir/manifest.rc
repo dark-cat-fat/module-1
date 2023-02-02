@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/Microsoft Visual Studio/Project/module_01/topic_10/2/out/build/x64-Debug/CMakeFiles/CMake_program_2.dir/embed.manifest"

@@ -67,7 +67,7 @@ public:
 		return  tmp;
 	}
 
-	Fraction operator*(Fraction other)
+	Fraction& operator*(Fraction other)
 	{
 		Fraction tmp(numerator_, denominator_);
 		tmp.numerator_ = numerator_ * other.numerator_;
@@ -78,7 +78,7 @@ public:
 		return  tmp;
 	}
 
-	Fraction operator/(Fraction other)
+	Fraction& operator/(Fraction other)
 	{
 		Fraction tmp(numerator_, denominator_);
 		tmp.numerator_ = numerator_ * other.denominator_;
@@ -86,10 +86,10 @@ public:
 
 		fShrink(tmp.numerator_, tmp.denominator_);
 
-		return  tmp;
+		return tmp;
 	}
 
-	Fraction operator++()
+	Fraction& operator++()
 	{
 		numerator_ = numerator_ + denominator_;
 		fShrink(numerator_, denominator_);
@@ -99,8 +99,10 @@ public:
 
 	Fraction operator--(int)
 	{
+		Fraction tmp(numerator_, denominator_);
+
 		numerator_ = numerator_ - denominator_;
-		return *this;
+		return tmp;
 	}
 	
 	friend std::ostream& operator<<(std::ostream& out, const Fraction& output);
