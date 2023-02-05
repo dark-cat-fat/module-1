@@ -67,7 +67,7 @@ public:
 		return  tmp;
 	}
 
-	Fraction& operator*(Fraction other)
+	Fraction operator*(Fraction other)
 	{
 		Fraction tmp(numerator_, denominator_);
 		tmp.numerator_ = numerator_ * other.numerator_;
@@ -78,7 +78,7 @@ public:
 		return  tmp;
 	}
 
-	Fraction& operator/(Fraction other)
+	Fraction operator/(Fraction other)
 	{
 		Fraction tmp(numerator_, denominator_);
 		tmp.numerator_ = numerator_ * other.denominator_;
