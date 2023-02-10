@@ -11,27 +11,35 @@
 			"path" : "STRING_RETURN.pdb"
 		}
 	],
-	"backtrace" : 1,
+	"backtrace" : 2,
 	"backtraceGraph" : 
 	{
 		"commands" : 
 		[
+			"_add_library",
 			"add_library"
 		],
 		"files" : 
 		[
+			"C:/Users/ridma/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/vcpkg-master/scripts/buildsystems/vcpkg.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
 			{
-				"file" : 0
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
-				"parent" : 0
+				"line" : 623,
+				"parent" : 1
 			}
 		]
 	},
@@ -104,12 +112,12 @@
 	"sources" : 
 	[
 		{
-			"backtrace" : 1,
+			"backtrace" : 2,
 			"path" : "Leaver.h",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 1,
+			"backtrace" : 2,
 			"compileGroupIndex" : 0,
 			"path" : "Leaver.cpp",
 			"sourceGroupIndex" : 1

@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "CMake_DLL_3",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "LeaverExe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeaverExe-Debug-c314561f25d273c9fad5.json",
+					"name" : "LeaverExe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "STRING_RETURN::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STRING_RETURN-Debug-e12ee0ed435398669da6.json",
+					"jsonFile" : "target-STRING_RETURN-Debug-48cd73a2667d5dd15ca7.json",
 					"name" : "STRING_RETURN",
 					"projectIndex" : 0
 				}

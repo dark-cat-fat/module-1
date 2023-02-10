@@ -1,13 +1,15 @@
 #pragma once
 #include <iostream>
+#include <Windows.h>
 
 #ifdef STRING_EXPORTS
-#define STRING_RETURN __declspec(dllexport)
+#define STRING_API __declspec(dllexport)
 #else
-#define STRING_RETURN __declspec(dllimport)
+#define STRING_API __declspec(dllimport)
 #endif
 
 class Leaver
 {
-	STRING_RETURN std::string leave(std::string input);
+public:
+	STRING_API std::string leave(std::string input);
 };

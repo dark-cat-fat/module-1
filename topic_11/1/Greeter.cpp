@@ -2,5 +2,5 @@
 
 std::string Greeter::greet(std::string input)
 {
-	return "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ," + input;
+	return "Здравствуйте, " + input;
 }

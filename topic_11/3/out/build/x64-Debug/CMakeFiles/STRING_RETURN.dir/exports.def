@@ -77,7 +77,7 @@ EXPORTS
 	?copy@?$_Char_traits@DH@std@@SAPEADQEADQEBD_K@Z
 	?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z
 	?deallocate@?$allocator@D@std@@QEAAXQEAD_K@Z
-	?leave@Leaver@@AEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V23@@Z
+	?leave@Leaver@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V23@@Z
 	?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z
 	?max@?$numeric_limits@_J@std@@SA_JXZ
 	?max_size@?$_Default_allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z
