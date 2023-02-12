@@ -2,7 +2,7 @@
 #include <iostream>
 #include <Windows.h>
 
-#ifdef STRING_EXPORTS
+#ifdef MY2_EXPORTS
 #define STRING_API __declspec(dllexport)
 #else
 #define STRING_API __declspec(dllimport)

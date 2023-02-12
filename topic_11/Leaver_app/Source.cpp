@@ -1,6 +1,6 @@
 #include "Leaver.h"
 
-void main()
+int main()
 {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
@@ -12,4 +12,6 @@ void main()
 	std::cin >> name;
 
 	std::cout << c_name.leave(name) << std::endl;
+
+	return 0;
 }
