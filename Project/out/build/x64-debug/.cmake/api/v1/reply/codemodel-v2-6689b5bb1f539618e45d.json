@@ -1,0 +1,150 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AirTLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AirTLib-Debug-49e02ecd143441de8ec8.json",
+					"name" : "AirTLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BootsLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BootsLib-Debug-337dd2427800ca4f755d.json",
+					"name" : "BootsLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BroomLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BroomLib-Debug-32b1052c12212aa7eb15.json",
+					"name" : "BroomLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CarpetLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CarpetLib-Debug-b7b6e2bed0cae8506da9.json",
+					"name" : "CarpetLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CentaurLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CentaurLib-Debug-bebd06f29beb2eab0dab.json",
+					"name" : "CentaurLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EagleLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EagleLib-Debug-f3127a53554ee6bba10b.json",
+					"name" : "EagleLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GroundLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GroundLib-Debug-a81d4e8523d791b1dada.json",
+					"name" : "GroundLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "KamelLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-KamelLib-Debug-b3081e7eb8eab2d9a252.json",
+					"name" : "KamelLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Project-Debug-01ee36cdf056d406579b.json",
+					"name" : "Project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VenchilLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VenchilLib-Debug-62f1ecf6915eb750ada1.json",
+					"name" : "VenchilLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fKamelLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fKamelLib-Debug-16c60adbd18cd534a9bc.json",
+					"name" : "fKamelLib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Microsoft Visual Studio/Project/module_01/Project/out/build/x64-debug",
+		"source" : "D:/Microsoft Visual Studio/Project/module_01/Project"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
