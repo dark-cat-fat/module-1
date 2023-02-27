@@ -7,8 +7,6 @@ EXPORTS
 	??_R0?AVexception@std@@@8 	 DATA
 	??$?0$$V@?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@U_Zero_then_variadic_args_t@1@@Z
 	??$?0D@?$allocator@U_Container_proxy@std@@@std@@QEAA@AEBV?$allocator@D@1@@Z
-	??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z
-	??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@D@Z
 	??$_Alloc_proxy@V?$allocator@U_Container_proxy@std@@@std@@@_Container_base12@std@@QEAAX$$QEAV?$allocator@U_Container_proxy@std@@@1@@Z
 	??$_Allocate@$0BA@U_Default_allocate_traits@std@@$0A@@std@@YAPEAX_K@Z
 	??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z
@@ -21,7 +19,6 @@ EXPORTS
 	??$_Destroy_in_place@PEAD@std@@YAXAEAPEAD@Z
 	??$_Get_size_of_n@$00@std@@YA_K_K@Z
 	??$_Get_size_of_n@$0BA@@std@@YA_K_K@Z
-	??$_Insert_string@DU?$char_traits@D@std@@_K@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@QEBD_K@Z
 	??$_Reallocate_for@V<lambda_66f57f934f28d61049862f64df852ff0>@@PEBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAAEAV01@_KV<lambda_66f57f934f28d61049862f64df852ff0>@@PEBD@Z
 	??$_Unfancy@D@std@@YAPEADPEAD@Z
 	??$_Unfancy@U_Container_proxy@std@@@std@@YAPEAU_Container_proxy@0@PEAU10@@Z
@@ -43,28 +40,23 @@ EXPORTS
 	??0_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ
 	??0_Container_base12@std@@QEAA@XZ
 	??0_Container_proxy@std@@QEAA@PEAU_Container_base12@1@@Z
-	??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z
 	??0bad_alloc@std@@AEAA@QEBD@Z
 	??0bad_alloc@std@@QEAA@AEBV01@@Z
 	??0bad_array_new_length@std@@QEAA@AEBV01@@Z
 	??0bad_array_new_length@std@@QEAA@XZ
 	??0exception@std@@QEAA@AEBV01@@Z
 	??0exception@std@@QEAA@QEBDH@Z
-	??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z
 	??1?$_Compressed_pair@V?$allocator@D@std@@V?$_String_val@U?$_Simple_types@D@std@@@2@$00@std@@QEAA@XZ
 	??1?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ
 	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAA@XZ
 	??1GroundT@@QEAA@XZ
 	??1Venchil@@QEAA@XZ
 	??1_Bxty@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAA@XZ
-	??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ
 	??1bad_alloc@std@@UEAA@XZ
 	??1bad_array_new_length@std@@UEAA@XZ
 	??1exception@std@@UEAA@XZ
-	??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ
 	??2@YAPEAX_KPEAX@Z
 	??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@QEBD@Z
-	??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEBA_NXZ
 	??R<lambda_66f57f934f28d61049862f64df852ff0>@@QEBA@QEAD_KQEBD@Z
 	?_Activate_SSO_buffer@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAXXZ
 	?_Adjust_manually_vector_aligned@std@@YAXAEAPEAXAEA_K@Z
@@ -77,7 +69,6 @@ EXPORTS
 	?_Getal@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBAAEBV?$allocator@D@2@XZ
 	?_Large_string_engaged@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBA_NXZ
 	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEAAPEADXZ
-	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QEBAPEBDXZ
 	?_Orphan_all@_Container_base12@std@@QEAAXXZ
 	?_Orphan_all_locked_v3@_Container_base12@std@@AEAAXXZ
 	?_Orphan_all_unlocked_v3@_Container_base12@std@@AEAAXXZ
@@ -93,16 +84,12 @@ EXPORTS
 	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@QEBD@Z
 	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@QEBD_K@Z
 	?copy@?$_Char_traits@DH@std@@SAPEADQEADQEBD_K@Z
-	?data@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBAPEBDXZ
 	?deallocate@?$_Default_allocator_traits@V?$allocator@U_Container_proxy@std@@@std@@@std@@SAXAEAV?$allocator@U_Container_proxy@std@@@2@QEAU_Container_proxy@2@_K@Z
 	?deallocate@?$allocator@D@std@@QEAAXQEAD_K@Z
-	?eof@?$_Narrow_char_traits@DH@std@@SAHXZ
-	?eq_int_type@?$_Narrow_char_traits@DH@std@@SA_NAEBH0@Z
 	?length@?$_Narrow_char_traits@DH@std@@SA_KQEBD@Z
 	?max@?$numeric_limits@_J@std@@SA_JXZ
 	?max_size@?$_Default_allocator_traits@V?$allocator@D@std@@@std@@SA_KAEBV?$allocator@D@2@@Z
 	?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ
 	?move@?$_Char_traits@DH@std@@SAPEADQEADQEBD_K@Z
-	?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEBA_KXZ
 	?time_dist@Kamel@@UEAAHH@Z
 	?what@exception@std@@UEBAPEBDXZ

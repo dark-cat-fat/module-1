@@ -5,6 +5,7 @@ fKamel::fKamel()
 	name = "Верблюд-быстроход";
 	speed = 40;
 	type = 1;
+	rest = 0;
 	time = 0;
 	timeToRest = 10;
 }

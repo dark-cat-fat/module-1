@@ -5,6 +5,7 @@ Kamel::Kamel()
 	name = "Верблюд";
 	speed = 10;
 	type = 1;
+	rest = 0;
 	time = 0;
 	timeToRest = 30;
 }
@@ -36,8 +37,6 @@ int Kamel::time_dist(int distance)
 		}
 
 		this->time += rest;
-
-		std::cout << name << ' ' << name << ' ' << time;
 
 		return this->time;
 	}
