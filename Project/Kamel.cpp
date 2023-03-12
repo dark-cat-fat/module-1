@@ -5,6 +5,7 @@ Kamel::Kamel()
 	name = "Верблюд";
 	speed = 10;
 	type = 1;
+	number = 3;
 	rest = 0;
 	time = 0;
 	timeToRest = 30;

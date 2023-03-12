@@ -5,6 +5,7 @@ Broom::Broom()
 	name = "Метла";
 	speed = 20;
 	time = 0;
+	number = 2;
 	type = 2;
 	coefficient = 1;
 }

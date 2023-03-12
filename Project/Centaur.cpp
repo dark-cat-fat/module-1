@@ -5,6 +5,7 @@ Centaur::Centaur()
 	name = "Кентавр";
 	speed = 15;
 	time = 0;
+	number = 4;
 	type = 1;
 	timeToRest = 8;
 }

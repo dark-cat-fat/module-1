@@ -5,6 +5,7 @@ Eagle::Eagle()
 	name = "Îð¸ë";
 	speed = 8;
 	time = 0;
+	number = 5;
 	type = 2;
 	coefficient = 100 - 6;
 	coefficient = coefficient / 100;

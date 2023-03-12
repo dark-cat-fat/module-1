@@ -54,10 +54,16 @@ bool race(Venchil* transport[], int size, int distance)
 
 	std::cout << "Результат гонки: " << std::endl;
 
-	for (int i = 0; i < size; i++)
+	for (int i = 1; i < size + 1; i++)
 	{
-		transport[i]->time_dist(distance);
-		std::cout << i + 1 << ". " << transport[i];
+		for (int j = 0; j < size; j++)
+		{
+			if (transport[j]->getNumber() == i)
+			{
+				transport[j]->time_dist(distance);
+				std::cout << i << ". " << transport[j];
+			}
+		}
 	}
 
 	for (int i = size - 1; i > 0; i--)
@@ -231,13 +237,9 @@ bool venchil(int type, int distance)
 			else
 				i++;
 		}
-
+		
 		else
-			if (check(transports, i, type) == 1)
-				continue;
-
-			else
-				i++;
+			i++;
 	}
 }
 

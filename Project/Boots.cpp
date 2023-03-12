@@ -6,6 +6,7 @@ Boots::Boots()
 	speed = 6;
 	type = 1;
 	timeToRest = 60;
+	number = 1;
 	time = 0;
 	rest = 0;
 }

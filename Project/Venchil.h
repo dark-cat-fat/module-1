@@ -9,6 +9,7 @@ protected:
 	int speed;
 	int type;
 	int distance;
+	int number;
 	float time;
 
 public:
@@ -20,5 +21,9 @@ public:
 
 	 bool operator!=(int iType);
 
+	 int getNumber();
+
 	 std::string getName();
+	 
+	 virtual ~Venchil() {};
 };

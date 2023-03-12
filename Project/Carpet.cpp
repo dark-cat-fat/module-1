@@ -5,6 +5,7 @@ Carpet::Carpet()
 	name = "Ковёр-самолёт";
 	speed = 10;
 	time = 0;
+	number = 7;
 	type = 2;
 	coefficient = 0;
 }
@@ -39,7 +40,7 @@ int Carpet::time_dist(int distance)
 		return this->time;
 	}
 
-	else if (distance >= 10000)
+	else
 	{
 		this->coefficient = 5;
 		this->coefficient = coefficient / 100;
